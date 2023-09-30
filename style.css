@@ -7,6 +7,10 @@
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
 }
+:root{
+    --box-number:3;
+    --box-width:10vw;
+}
 
 body{
     width: 98vw;
@@ -34,7 +38,7 @@ div.players>div {
     align-items: center;
 }
 
-div.players div div.player{
+div.players div div.player1,div.players div div.player2{
     width: 20px;
     height: 20px;
     border-radius: 10px;
@@ -57,8 +61,8 @@ div.players div div:nth-child(2){
 
 div.game{
     display: grid;
-    grid-template-columns: repeat(3,10vw);
-    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(var(--box-number),var(--box-width));
+    grid-template-rows: repeat(var(--box-number),var(--box-width));
     gap: 10px;
 
     background-color: #f2f2f2;
