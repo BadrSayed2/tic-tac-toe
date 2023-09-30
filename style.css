@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    font-family: 'K2D', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mooli', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    width: 98vw;
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ################################################################################ */
+
+
+div.players{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+div.players>div {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 3px 10px;
+    align-items: center;
+}
+
+div.players div div.player{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin: 0 2px;
+
+    background-color: #666;
+}
+
+div.players div div.active{
+    background-color: #11ff66;
+}
+
+div.players div div:nth-child(2){
+    font-size: 60px;
+}
+
+
+/* ################################################################################ */
+
+
+div.game{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    gap: 10px;
+
+    background-color: #f2f2f2;
+    border: 1px solid #f1f1f1;
+    box-shadow: 2px 2px 2px black;
+}
+
+
+div.game div.box {
+    background-color: #fff;
+    font-size: 10vw;
+    padding: 10px;
+}
+
+div.game div.x,div.game div.o{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.game div.x{
+    color: #11ff66;
+   
+}
+div.game div.o{
+    color: #1166ff;
+}
+
+div.game div.winner{
+    background-color: #ff6565;
+}
+/* ################################################################################# */
